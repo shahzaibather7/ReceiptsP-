@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1154F51D1F469B7800176245 /* Receipts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1154F51B1F469B7800176245 /* Receipts.xcdatamodeld */; };
 		1171498B1F46216A00DFE050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171498A1F46216A00DFE050 /* main.m */; };
 		1171498E1F46216A00DFE050 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171498D1F46216A00DFE050 /* AppDelegate.m */; };
 		117149911F46216A00DFE050 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117149901F46216A00DFE050 /* ViewController.m */; };
 		117149941F46216A00DFE050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117149921F46216A00DFE050 /* Main.storyboard */; };
-		117149971F46216A00DFE050 /* Recipts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 117149951F46216A00DFE050 /* Recipts.xcdatamodeld */; };
 		117149991F46216A00DFE050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117149981F46216A00DFE050 /* Assets.xcassets */; };
 		1171499C1F46216A00DFE050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1171499A1F46216A00DFE050 /* LaunchScreen.storyboard */; };
+		117149A51F46268F00DFE050 /* DetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117149A41F46268F00DFE050 /* DetailedViewController.m */; };
+		117149AB1F46396300DFE050 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117149AA1F46396300DFE050 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1154F51C1F469B7800176245 /* Receipts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Receipts.xcdatamodel; sourceTree = "<group>"; };
 		117149861F46216A00DFE050 /* Recipts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1171498A1F46216A00DFE050 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1171498C1F46216A00DFE050 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -24,10 +27,12 @@
 		1171498F1F46216A00DFE050 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		117149901F46216A00DFE050 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		117149931F46216A00DFE050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		117149961F46216A00DFE050 /* Recipts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipts.xcdatamodel; sourceTree = "<group>"; };
 		117149981F46216A00DFE050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1171499B1F46216A00DFE050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1171499D1F46216A00DFE050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		117149A31F46268F00DFE050 /* DetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedViewController.h; sourceTree = "<group>"; };
+		117149A41F46268F00DFE050 /* DetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedViewController.m; sourceTree = "<group>"; };
+		117149AA1F46396300DFE050 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117149AB1F46396300DFE050 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +52,7 @@
 			children = (
 				117149881F46216A00DFE050 /* Recipts */,
 				117149871F46216A00DFE050 /* Products */,
+				117149A91F46396300DFE050 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,14 +69,16 @@
 			children = (
 				1171498C1F46216A00DFE050 /* AppDelegate.h */,
 				1171498D1F46216A00DFE050 /* AppDelegate.m */,
+				117149A31F46268F00DFE050 /* DetailedViewController.h */,
+				117149A41F46268F00DFE050 /* DetailedViewController.m */,
 				1171498F1F46216A00DFE050 /* ViewController.h */,
 				117149901F46216A00DFE050 /* ViewController.m */,
 				117149921F46216A00DFE050 /* Main.storyboard */,
 				117149981F46216A00DFE050 /* Assets.xcassets */,
 				1171499A1F46216A00DFE050 /* LaunchScreen.storyboard */,
 				1171499D1F46216A00DFE050 /* Info.plist */,
-				117149951F46216A00DFE050 /* Recipts.xcdatamodeld */,
 				117149891F46216A00DFE050 /* Supporting Files */,
+				1154F51B1F469B7800176245 /* Receipts.xcdatamodeld */,
 			);
 			path = Recipts;
 			sourceTree = "<group>";
@@ -80,6 +89,14 @@
 				1171498A1F46216A00DFE050 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		117149A91F46396300DFE050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				117149AA1F46396300DFE050 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1154F51D1F469B7800176245 /* Receipts.xcdatamodeld in Sources */,
 				117149911F46216A00DFE050 /* ViewController.m in Sources */,
 				1171498E1F46216A00DFE050 /* AppDelegate.m in Sources */,
-				117149971F46216A00DFE050 /* Recipts.xcdatamodeld in Sources */,
 				1171498B1F46216A00DFE050 /* main.m in Sources */,
+				117149A51F46268F00DFE050 /* DetailedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Recipts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = z.Recipts;
+				PRODUCT_BUNDLE_IDENTIFIER = z.Receipt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -287,7 +305,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Recipts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = z.Recipts;
+				PRODUCT_BUNDLE_IDENTIFIER = z.Receipt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -311,17 +329,18 @@
 				117149A21F46216A00DFE050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		117149951F46216A00DFE050 /* Recipts.xcdatamodeld */ = {
+		1154F51B1F469B7800176245 /* Receipts.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				117149961F46216A00DFE050 /* Recipts.xcdatamodel */,
+				1154F51C1F469B7800176245 /* Receipts.xcdatamodel */,
 			);
-			currentVersion = 117149961F46216A00DFE050 /* Recipts.xcdatamodel */;
-			path = Recipts.xcdatamodeld;
+			currentVersion = 1154F51C1F469B7800176245 /* Receipts.xcdatamodel */;
+			path = Receipts.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
